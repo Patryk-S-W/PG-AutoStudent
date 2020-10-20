@@ -48,5 +48,5 @@ Format:
   
  1. Edytuj "config.json" i uzupełnij wedle potrzeb
  2. Zainstaluj Selenium, webdriver_manager i pozostałe rzeczy pod pythona
- 3. Uruchom: `python a.py` (łączenie z MS Teams) lub `python f.py` (zaznaczanie frekwencji na Moodlu)
+ 3. Uruchom: `python a.py` (łączenie z MS Teams) lub `python f.py link_do_kursu` (zaznaczanie frekwencji na Moodlu)
  
