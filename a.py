@@ -374,26 +374,6 @@ def main():
     for team in teams:
         print(team)
 
-    if 'start_automatically' not in config or not config['start_automatically']:
-        sel_str = "\nStart [s], Reload teams [r], Quit [q]\n"
-
-        selection = input(sel_str).lower()
-        while selection != 's':
-            if selection == 'q':
-                browser.close()
-                exit(0)
-            if selection == 'r':
-                load_config()
-                teams = get_teams()
-                for team in teams:
-                    team.init_channels()
-                    team.check_blacklist()
-
-                for team in teams:
-                    print(team)
-
-            selection = input(sel_str).lower()
-
     check_interval = 5
     if "check_interval" in config and config['check_interval'] > 1:
         check_interval = config['check_interval']

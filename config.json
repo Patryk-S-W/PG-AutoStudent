@@ -6,7 +6,6 @@
 
   "run_at_time": "",
 
-  "start_automatically": true,
   "organisation_num" : 2,
   "random_delay": false,
   "check_interval": 5,
